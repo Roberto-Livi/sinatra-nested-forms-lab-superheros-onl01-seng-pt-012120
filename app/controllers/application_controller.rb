@@ -9,7 +9,9 @@ class App < Sinatra::Base
     end
     
     post '/teams' do
-      @team
+      @team_name = ["team"]["name"]
+      @team_motto = ["team"]["motto"]
+      @team_members = ["team"]["members"]
       
       erb :'../views/team'
     end
